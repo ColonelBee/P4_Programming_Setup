@@ -25,7 +25,7 @@ First of all create a new .p4 file in a directory called p4projects:
 ```bash
   p4c -b bmv2 --p4runtime-files build/hello.p4info.txtpb hello.p4 -o build
 ```
-At this point you might get the error while loading shared libraries: libboost_iostreams.so.1.71.0: cannot open shared        object file: No such file or directory. To fix, install the libboost-iostreams1.71.0
+At this point, you might get the error while loading shared libraries: libboost_iostreams.so.1.71.0: cannot open shared object file: No such file or directory. To fix, install the libboost-iostreams1.71.0
 ```bash
   apt-get update && apt-get install -y libboost-iostreams1.71.0
 ```
