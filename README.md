@@ -71,7 +71,7 @@ You can either use p4runtime-sh or Python script to add rules to the simple_swit
   git clone https://github.com/protocolbuffers/protobuf.git
   cd p4runtime/proto
   pip install protobuf==3.20.* --break-system-packages
-  python3 -m grpc_tools.protoc -I. -I/(your home dir)/p4c/control-plane --python_out=. --grpc_python_out=. p4/v1/p4runtime.proto
+  python3 -m grpc_tools.protoc -I. -I/(your_home_dir)/p4c/control-plane --python_out=. --grpc_python_out=. p4/v1/p4runtime.proto
 ```
 You can see your home directory through
 ```bash
