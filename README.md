@@ -66,12 +66,12 @@ You must let the switch on when you upload rules from P4Runtime Controller!
 Ctrl + C to turn the switch off.
 
 #### III. P4Runtime Controller
-You can either use p4runtime-sh or Python script to add rules to the simple_switch, but this repo will focus on Python scirpt
+You can either use p4runtime-sh or Python script to add rules to the simple_switch, but this repo will focus on Python script
 ```bash
   git clone https://github.com/protocolbuffers/protobuf.git
   cd p4runtime/proto
   pip install protobuf==3.20.* --break-system-packages
-  python3 -m grpc_tools.protoc -I. -I/(your_home_dir)/p4c/control-plane --python_out=. --grpc_python_out=. p4/v1/p4runtime.proto
+  python3 -m grpc_tools.protoc -I. -I(your_home_dir)/p4c/control-plane --python_out=. --grpc_python_out=. p4/v1/p4runtime.proto
 ```
 You can see your home directory through
 ```bash
