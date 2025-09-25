@@ -5,6 +5,7 @@ First of all create a new .p4 file in a directory called p4projects:
 
 ```bash
   mkdir p4projects
+  cd ./p4projects
   touch hello.p4
 ```
 #### I. Using docker container for p4c compiler
