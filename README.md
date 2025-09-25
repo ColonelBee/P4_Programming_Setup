@@ -32,7 +32,7 @@ At this point, you might get the error while loading shared libraries: libboost_
 ```
 Then, try to compile your P4 program again.
 
-Now, you should see hello.p4 and build directory if your code doesn't have bugs.
+Now, you should see hello.p4 and a directory named build if your code doesn't have bugs.
 
 Inside the build directory, you should see these files as follows:
 
