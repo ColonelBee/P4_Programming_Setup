@@ -1,13 +1,14 @@
 # P4_Programming_Setup
 ### This is the repository that tests and sets up P4 program as well as P4RunTime controller.
 ### The repo is still in progress (updated 26/9)
-First of all create a new .p4 file in a directory called p4projects:
+First of all create a new .p4 file in a directory called p4projects
 
 ```bash
   mkdir p4projects
   cd ./p4projects
   touch hello.p4
 ```
+You can take the P4 code to test from [hello.p4](https://github.com/ColonelBee/P4_Programming_Setup/blob/main/hello.p4)
 #### I. Using docker container for p4c compiler
 1. Pull the official P4 compiler image
 ```bash
