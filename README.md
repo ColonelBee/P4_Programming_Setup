@@ -74,7 +74,7 @@ You can either use p4runtime-sh or Python script to add rules to the simple_swit
   pip install protobuf==3.20.* --break-system-packages
   python3 -m grpc_tools.protoc -I. -I(your_home_dir)/p4c/control-plane --python_out=. --grpc_python_out=. p4/v1/p4runtime.proto
 ```
-You can see your home directory through
+Then, you replace (your_home_dir) with the result you get from 
 ```bash
   echo $HOME
 ```
