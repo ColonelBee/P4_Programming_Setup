@@ -1,6 +1,6 @@
 # P4_Programming_Setup
 ### This is the repository that tests and sets up P4 program as well as P4RunTime controller.
-### The repo is still in progress (updated 25/9)
+### The repo is still in progress (updated 26/9)
 First of all create a new .p4 file in a directory called p4projects:
 
 ```bash
@@ -86,8 +86,8 @@ Now you can check
 ```
 If no error shows up, you have successfully installed P4Runtime!
 #### IV. Testing the interaction of P4Runtime and the simple_switch_grpc
-Make sure that the simple_switch_grpc is ON as stated in section II
+Make sure that the simple_switch_grpc is ON as stated in section II.
 
-Create a Python file, and run the code in [test_P4.py](https://github.com/ColonelBee/P4_Programming_Setup/blob/main/test_P4.py)
+Create a Python file, and run the test code from [test_P4.py](https://github.com/ColonelBee/P4_Programming_Setup/blob/main/test_P4.py) in another terminal.
 
 If the result shows the connection successfully, that means the connection is good.
