@@ -87,4 +87,5 @@ Now you can check
 If no error shows up, you have successfully installed P4Runtime!
 #### IV. Testing the interaction of P4Runtime and the simple_switch_grpc
 Make sure that the simple_switch is ON as stated in section II
-Make a Python file, and run the code in ... (updating)
+
+Create a Python file, and run the code in ... (updating)
