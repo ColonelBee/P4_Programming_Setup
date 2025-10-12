@@ -1,6 +1,6 @@
 # P4_Programming_Setup
 ### This is the repository that tests and sets up P4 program as well as P4RunTime controller.
-### The repo is still in progress (updated 26/9)
+### The repo is still in progress (updated 12/10)
 First of all create a new .p4 file in a directory called p4projects
 
 ```bash
@@ -65,28 +65,22 @@ After that, you might get the result as shown below:
 ```
 You must let the switch on when you upload rules from P4Runtime Controller! 
 
-Ctrl + C to turn the switch off.
-
 #### III. P4Runtime Controller
-You can either use p4runtime-sh or Python script to add rules to the simple_switch, but this repo will focus on Python script
+Install P4Runtime shell via pip3
 ```bash
-  git clone https://github.com/protocolbuffers/protobuf.git
-  cd p4runtime/proto
-  pip install protobuf==3.20.* --break-system-packages
-  python3 -m grpc_tools.protoc -I. -I(your_home_dir)/p4c/control-plane --python_out=. --grpc_python_out=. p4/v1/p4runtime.proto
+  # Install p4runtime-shell package and run it
+  pip3 install p4runtime-shell --break-system-packages
+  python3 -m p4runtime_sh --grpc-addr <server IP>:<server port> \
+    --device-id 0 --election-id 0,1 --config <p4info.txt>,<pipeline config>
 ```
-Then, you replace (your_home_dir) with the result you get from 
+
+Now you can check if there is a line like
 ```bash
-  echo $HOME
+  *** Welcome to the IPython shell for P4Runtime ***
 ```
-Now you can check
-```bash
-  python3
-  >>> import p4.v1.p4runtime_pb2
-  >>> import p4.v1.p4runtime_pb2_grpc
-```
+then you are good to go.
 If no error shows up, you have successfully installed P4Runtime!
-#### IV. Testing the interaction of P4Runtime and the simple_switch_grpc
+#### IV. Testing the interaction of P4Runtime and the simple_switch_grpc via Python script
 Make sure that the simple_switch_grpc is ON as stated in section II.
 
 Create a Python file, and run the test code from [test_P4.py](https://github.com/ColonelBee/P4_Programming_Setup/blob/main/test_P4.py) in another terminal.
