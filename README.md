@@ -1,6 +1,6 @@
 # P4_Programming_Setup
 ### This is the repository that tests and sets up P4 program as well as P4RunTime controller.
-### The repo is still in progress (updated 12/10)
+### The repo is still in progress (updated 1/12)
 First of all create a new .p4 file in a directory called p4projects
 
 ```bash
@@ -17,7 +17,7 @@ You can take the P4 code to test from [hello.p4](https://github.com/ColonelBee/P
 2. Direct to your directory that holds your hello.p4 program and run the Docker p4c container
 ```bash
   cd p4projects
-  docker run -it --rm --privileged --network host -v $(pwd):/work p4lang/p4c:latest bash
+  docker run -it --privileged --network host -v $(pwd):/work p4lang/p4c:latest bash
 ```
 3. Inside the container, redirect to your pwd mounted on /work
 ```bash
@@ -47,7 +47,7 @@ Inside the build directory, you should see these files as follows:
 ```
 2. Run the Docker container for behavioral-model
 ```bash
-  docker run -it --rm --privileged --network host -v $(pwd):/work p4lang/behavioral-model:latest bash
+  docker run -it --privileged --network host -v $(pwd):/work p4lang/behavioral-model:latest bash
 ```
 3. Inside the container, redirect to your pwd mounted on /work
 ```bash
